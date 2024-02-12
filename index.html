@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name revel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #222;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Protest Revolution", sans-serif;
+      }
+      .name {
+        font-size: 60px;
+        position: relative;
+        letter-spacing: 2px;
+      }
+      .name::before {
+        content: "SHUBHAM...!";
+        position: absolute;
+        overflow: hidden;
+        animation: revel 4s linear infinite alternate;
+        color: aqua;
+      }
+
+      @keyframes revel {
+        0% {
+          width: 0%;
+          color: rgb(255, 0, 0);
+          border-right: 2px solid rgb(255, 0, 0);
+          filter: drop-shadow(4px 1px 3px rgb(255, 0, 0));
+        }
+        50% {
+          width: 50%;
+          color: rgb(0, 255, 8);
+          border-right: 2px solid rgb(0, 255, 8);
+          filter: drop-shadow(4px 1px 3px rgb(0, 255, 8));
+        }
+        100% {
+          width: 100%;
+          color: rgb(0, 255, 166);
+          border-right: 2px solid rgb(0, 255, 166);
+          filter: drop-shadow(4px 1px 3px rgb(0, 255, 166));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="name">SHUBHAM...!</div>
+  </body>
+</html>
